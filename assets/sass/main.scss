@@ -514,6 +514,7 @@
 		}
 	}
 
+
 	ul {
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
@@ -537,6 +538,7 @@
 				}
 			}
 		}
+
 
 		&.feature-icons {
 			list-style: none;
@@ -567,6 +569,40 @@
 			}
 		}
 
+		&.devIcons {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				// font-size: 18px;
+				font-size: 16px;
+				// font-family: _font(family);
+				display: inline-block;
+				margin: 0 0 (_size(element-margin) * 0.75) 0;
+				padding: 0.35em 0 0 3.5em;
+				position: relative;
+				vertical-align: top;
+				width: 48%;
+
+				i:before {
+					// font-family: devicon;
+					background: _palette(accent1, bg);
+					border-radius: 50%;
+					color: _palette(accent1, fg-bold);
+					display: block;
+					height: 1.5em;
+					width: 1.5em;
+					left: 0;
+					// line-height: 2.5em;
+					line-height: 1.5em;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					font-size: 30px;
+				}
+			}
+		}
+
 		&.icons {
 			cursor: default;
 			list-style: none;
@@ -575,6 +611,7 @@
 			li {
 				display: inline-block;
 				padding: 0 1em 0 0;
+				font-size: 18px;
 
 				&:last-child {
 					padding-right: 0 !important;
